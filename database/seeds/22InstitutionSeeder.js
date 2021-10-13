@@ -9,7 +9,8 @@ class InstitutionSeeder {
         var obj = [{
                 name: 'Merchant',
                 code: '001',
-                description: 'a merchant'
+                description: 'a merchant',
+                user_id: 1
             },
             {
                 name: 'Customer',

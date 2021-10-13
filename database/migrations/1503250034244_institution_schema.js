@@ -9,6 +9,7 @@ class InstitutionSchema extends Schema {
             table.increments()
             table.string('code', 50)
             table.string('name', 80)
+            table.integer('user_id').unsigned().references('id').inTable('users').nullable().defaultTo(null).onDelete('SET NULL')
             table.string('description', 254)
             table.boolean('is_active').defaultTo(true)
             table.timestamps()

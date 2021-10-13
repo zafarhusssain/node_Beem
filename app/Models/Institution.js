@@ -18,7 +18,7 @@ class Institution extends Model {
         return ['is_active', 'created_at', 'updated_at']
     }
     static get visible() {
-        return ['id', 'code', 'name', 'description']
+        return ['id', 'code', 'name', 'description', 'user_id']
     }
 
 }
